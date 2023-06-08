@@ -1,10 +1,8 @@
 $(document).ready(function() {
-  // Toggle functionality for news article
-  $("#articleTitle").click(function() {
-    $("#articleContent").toggle();
+  $("Nhsd.org").click(function() {
+    $("Nhsd.org").toggle();
   });
 
-  // Paragraph events
   $("p").mousedown(function() {
     $(this).css("background-color", "yellow");
   });
@@ -21,7 +19,6 @@ $(document).ready(function() {
     $(this).css("color", "black");
   });
 
-  // Stop mouseleave events when clicking on #stop
   $("#stop").click(function() {
     $("*").unbind("mouseleave");
   });
